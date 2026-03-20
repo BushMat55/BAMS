@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./forgotPassword.css";
+import "./ForgotPassword.css";
 
 const ForgotPassword = () => {
     const [email, setEmail] = useState("");
@@ -43,7 +43,7 @@ const ForgotPassword = () => {
                     <button type="submit">Send Reset Link</button>
                 </form>
                 <p className="message">{message}</p>
-                <button className="back-button" onClick={() => navigate("/login")}>
+                <button className="back-button" onClick={() => navigate("/Login")}>
                     Back to Login
                 </button>
             </div>

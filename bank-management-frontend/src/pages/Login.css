@@ -4,49 +4,49 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Soft blue gradient */
+    background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC); /* Vibrant blue gradient */
 }
 
 .login-box {
-    background: white;
+    background: #ffffff;
     padding: 40px;
-    width: 380px;
+    width: 400px;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 /* Headings */
 .login-box h2 {
     margin-bottom: 20px;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
-    color: #2d5faa; /* Deep Blue */
+    color: #003366; /* Dark Navy */
 }
 
 /* Form Inputs */
 .login-box label {
     display: block;
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
     margin: 10px 0 5px;
-    color: #4a4a4a;
-    font-weight: 500;
+    color: #333333;
+    font-weight: 600;
 }
 
 .login-box input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #bfc9da;
+    border: 2px solid #6FB1FC;
     border-radius: 8px;
     font-size: 16px;
     outline: none;
-    transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .login-box input:focus {
-    border-color: #2d5faa;
-    box-shadow: 0 0 5px rgba(45, 95, 170, 0.5);
+    border-color: #003366;
+    box-shadow: 0 0 8px rgba(0, 51, 102, 0.4);
 }
 
 /* Forgot Password */
@@ -57,9 +57,9 @@
 }
 
 .forgot-password span {
-    color: #2d5faa;
+    color: #003366;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .forgot-password span:hover {
@@ -68,26 +68,31 @@
 
 /* Login Button */
 .login-box button {
-    background: #2d5faa;
+    background: #003366;
     color: white;
     width: 100%;
     padding: 12px;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     cursor: pointer;
     margin-top: 15px;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .login-box button:hover {
-    background: #1e4a85;
+    background: #002244;
+    transform: scale(1.03);
 }
 
 /* Error Message */
 .message {
-    color: red;
-    margin-top: 10px;
+    color: #D8000C;
+    background: #FFD2D2;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 6px;
     font-size: 14px;
+    font-weight: 600;
 }

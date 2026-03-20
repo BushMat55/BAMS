@@ -1,13 +1,32 @@
 /* General page styling */
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     background: #f4f4f4;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     color: #333;
+    padding-top: 60px; /* Space for the top navigation pane */
+}
+
+/* Top navigation styling */
+nav {
+    width: 100%;
+    background: #3498db;
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Main container */
@@ -20,6 +39,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjusted margin to prevent overlap with top nav */
 }
 
 /* Left panel (modern dark-themed image section) */
@@ -101,6 +121,11 @@ button:hover {
 
     .register-left {
         display: none;
+    }
+
+    /* Adjust padding for smaller screens */
+    body {
+        padding-top: 50px; /* Adjust top padding for smaller screens */
     }
 }
 
